@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
+    <link rel="stylesheet" type="text/css" href="Assets/slick/slick.css">
+    
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
@@ -39,22 +41,22 @@
         <div class="navbar-collapse collapse" id="collapsingNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">Home</span></a>
+                    <a class="nav-link" href="#home">Home <span class="sr-only">Home</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/about.html">About us</a>
+                    <a class="nav-link" href="#about">About us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/product.html" data-toggle="collapse">Product</a>
+                    <a class="nav-link" href="#product" data-toggle="collapse">Product</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/event.html" data-toggle="collapse">Events</a>
+                    <a class="nav-link" href="#testimonial" data-toggle="collapse">testimonial</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/calendar.html" data-toggle="collapse">Calendar</a>
+                    <a class="nav-link" href="#event" data-toggle="collapse">Event</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/blog.html" data-toggle="collapse">Blog</a>
+                    <a class="nav-link" href="#blog" data-toggle="collapse">Blog</a>
                 </li>
 
                <div class="mobile-social">
@@ -87,8 +89,8 @@
 <!-- End of hero section -->
 
 
-<!-- Event Section  -->
-<section id="event">
+<!-- About Section  -->
+<section id="about">
     <div class="event-section section-bg" style="background:url(Assets/Images/bg.png)">
       <div class="container">
           <div class="text-wrap">
@@ -99,8 +101,11 @@
       </div>
     </div>
 </section>
+<!-- End of About Section-->
 
-<section id="services">
+
+<!-- Product Section -->
+<section id="product">
     <div class="service-section">
         <div class="container">
             <div class="section-heading text-center">
@@ -188,8 +193,9 @@
         </div>
     </div>
 </section>
+<!-- End of Product Section -->
 
-
+<!-- Testimonial Section -->
 <section id="testimonial">
     <div class="testimonial-section section-bg" style="background:url(Assets/Images/Inspiration-testimony.png)">
         <div class="container">
@@ -197,8 +203,8 @@
                   <h2>INSPIRATIONAL TESTIMONY</h2>
               </div>
 
-              <div class="row">
-                  <div class="non-active-testimonial col-4 text-center">
+              <div class="center">
+                  <div class="non-active-testimonial  text-center">
                 <div class="avatar-img">
                 <img src="Assets/Images/Fade-avatar.png" alt="avatar" >
                 </div>
@@ -209,7 +215,7 @@
                     <h4>President</h4>
                 </div>
                 </div>
-                <div class="active-testimonial text-center col-4">
+                <div class="active-testimonial text-center ">
                     <div class="avatar-img">
                     <img src="Assets/Images/Active-avatar.png" alt="avatar" >
                     </div>
@@ -219,7 +225,7 @@
                         <h4>CEO</h4>
                     </div>
                     </div>
-                    <div class="non-active-testimonial text-center col-4">
+                    <div class="non-active-testimonial text-center ">
                         <div class="avatar-img">
                         <img src="Assets/Images/Fade-avatar.png" alt="avatar" >
                         </div>
@@ -231,15 +237,108 @@
                             <h4>Executive VP</h4>
                         </div>
                         </div>
+
+                        <div class="non-active-testimonial text-center ">
+                            <div class="avatar-img">
+                            <img src="Assets/Images/Fade-avatar.png" alt="avatar" >
+                            </div>
+                            <div class="quote-text text-light">
+                               <p>Is responsible for global 
+                                business development and 
+                                strategic account 
+                                management.</p>
+                                <h4>Executive VP</h4>
+                            </div>
+                            </div>
           
               </div>
         </div>
 
     </div>
 </section>
+<!-- End of Testimonial Section  -->
 
 
-<section>
+<!-- Event Section -->
+
+<!-- End of Event Section-->
+<section id="event">
+    <div class="container">
+        <div class="upcoming-event-section">
+            <div class="section-heading"><h2>Upcoming Events</h2></div>
+            <div class="card mt-4">
+                <div class="row no-gutters">
+                  <div class="col-md-3 content-streched">
+                    <img src="Assets/Images/Event-thumbnail.png" class="card-img" alt="upcoming-event">
+                  </div>
+                  <div class="col-md-9">
+                    <div class="card-body">
+                      <h5 class="card-title">Global Pharmaceutical Regulatory Affairs Summit</h5>
+                      <p class="card-text"><span><img src="Assets/Images/calendar-cion.png" alt="calendar"></span><span class="timing">Monday, 8:00AM - Tuesday, 8:Pm</span></p>
+                      <p class="card-text"><span><img src="Assets/Images/target-icon.png" alt="target"></span><span class="hotel-name">Madison Hotel</span></p>
+                    <p class="card-text"><span><img src="Assets/Images/home-icon.png" alt="building"></span><span class="location">203 St.Mountain View, San Fransico, California, USA</span></p>
+                    <a class="btn main-btn" href="#">Read More</a>
+                </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mt-4">
+                <div class="row no-gutters">
+                  <div class="col-md-3 content-streched">
+                    <img src="Assets/Images/Event-thumbnail.png" class="card-img" alt="upcoming-event">
+                  </div>
+                  <div class="col-md-9">
+                    <div class="card-body">
+                      <h5 class="card-title">Global Pharmaceutical Regulatory Affairs Summit</h5>
+                      <p class="card-text"><span><img src="Assets/Images/calendar-cion.png" alt="calendar"></span><span class="timing">Monday, 8:00AM - Tuesday, 8:Pm</span></p>
+                      <p class="card-text"><span><img src="Assets/Images/target-icon.png" alt="target"></span><span class="hotel-name">Madison Hotel</span></p>
+                    <p class="card-text"><span><img src="Assets/Images/home-icon.png" alt="building"></span><span class="location">203 St.Mountain View, San Fransico, California, USA</span></p>
+                    <a class="btn main-btn" href="#">Read More</a>
+                </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mt-4">
+                <div class="row no-gutters">
+                  <div class="col-md-3 content-streched">
+                    <img src="Assets/Images/Event-thumbnail.png" class="card-img" alt="upcoming-event">
+                  </div>
+                  <div class="col-md-9">
+                    <div class="card-body">
+                      <h5 class="card-title">Global Pharmaceutical Regulatory Affairs Summit</h5>
+                      <p class="card-text"><span><img src="Assets/Images/calendar-cion.png" alt="calendar"></span><span class="timing">Monday, 8:00AM - Tuesday, 8:Pm</span></p>
+                      <p class="card-text"><span><img src="Assets/Images/target-icon.png" alt="target"></span><span class="hotel-name">Madison Hotel</span></p>
+                    <p class="card-text"><span><img src="Assets/Images/home-icon.png" alt="building"></span><span class="location">203 St.Mountain View, San Fransico, California, USA</span></p>
+                    <a class="btn main-btn" href="#">Read More</a>
+                </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mt-4">
+                <div class="row no-gutters">
+                  <div class="col-md-3 content-streched">
+                    <img src="Assets/Images/Event-thumbnail.png" class="card-img" alt="upcoming-event">
+                  </div>
+                  <div class="col-md-9">
+                    <div class="card-body">
+                      <h5 class="card-title">Global Pharmaceutical Regulatory Affairs Summit</h5>
+                      <p class="card-text"><span><img src="Assets/Images/calendar-cion.png" alt="calendar"></span><span class="timing">Monday, 8:00AM - Tuesday, 8:Pm</span></p>
+                      <p class="card-text"><span><img src="Assets/Images/target-icon.png" alt="target"></span><span class="hotel-name">Madison Hotel</span></p>
+                    <p class="card-text"><span><img src="Assets/Images/home-icon.png" alt="building"></span><span class="location">203 St.Mountain View, San Fransico, California, USA</span></p>
+                    <a class="btn main-btn" href="#">Read More</a>
+                </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Section -->
+<section id="blog">
     <div class="blog-rss-section">
         <div class="container">
             <div class="section-heading text-center">
@@ -282,7 +381,7 @@
         </div>
     </div>
 </section>
-
+<!-- End of Blog Section -->
 
 <footer>
     <div class="newsletter-section">
@@ -308,16 +407,19 @@
     </div>
 </footer>
 
-
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="Assets/slick/slick.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+
+
+  <script src="main.js"></script>
+   
 </body>
 
 </html>

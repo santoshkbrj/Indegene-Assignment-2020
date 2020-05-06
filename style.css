@@ -81,12 +81,15 @@ z-index:10;
 .navbar-toggler-icon:active{
     outline: none;
 }
-.navbar-nav{
-    background: var(--primary-color);
+.navbar-nav{  
+    background:#fff;
     padding:20px;
 }
 .navbar-nav .nav-link{
-    color:#fff;
+    color: var(--primary-color);
+}
+.navbar-nav .nav-link:hover{
+    color:var(--secondary-color);
 }
 
 #header .header-social-share ul{
@@ -108,6 +111,15 @@ z-index:10;
     text-align: center;
     line-height: 54px;
     border-radius: 50px;
+}
+
+header#header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
 }
 
 /*=================================
@@ -210,7 +222,7 @@ Event Section
  Testimonial Section 
 ========================================*/
 .testimonial-section{
-    padding:90px 0 300px;
+    padding:90px 0 90px;
 }
 .testimonial-section .header-section{
     margin-bottom: 60px;
@@ -230,12 +242,86 @@ Event Section
     font-style: italic;
     margin-top:40px;
 }
-.non-active-testimonial{
+.slick-initialized .slick-slide{
+    margin:0px 42px;
+}
+.non-active-testimonial.slick-current.slick-active,
+.active-testimonial.slick-current.slick-active{
+    opacity:1;
+}
+.non-active-testimonial.slick-active,
+.active-testimonial.slick-active{
     opacity:0.6;
+}
+.slick-slide img{
+    margin:0 auto;
 }
 
 
-/*==========================================
+
+.slick-slide:focus{
+    outline:none;
+  }
+  ul.slick-dots{
+      padding-left:0px;
+      text-align:center;
+      margin-top: 90px;
+  }
+  .slick-list{
+      padding:0px!important;
+  }
+
+ .slick-dots li{
+        margin: 0 5px;
+      display: inline-block;
+  }
+   .slick-dots li.slick-active button {
+      width: 14px;
+      height: 14px;
+      opacity: 1;
+      background: #fff;
+      border:2px solid #fff;
+  }
+  .slick-dots li button:hover{
+        background: #fff;
+        border:2px solid #fff;
+  }
+   .slick-dots li button {
+      font-size: 1px;
+      color: transparent;
+      border:2px solid #fff;
+      padding: 0;
+      border: 0;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: none;
+      transition: all .2s ease-in-out;
+      cursor: pointer;
+      
+  }
+   .slick-dots li button {
+      font-size: 1px;
+      color: transparent;
+      padding: 0;
+      border: 0;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: transparent;
+      border:2px solid #fff;
+      transition: all .2s ease-in-out;
+      cursor: pointer;
+    
+  }
+   .slick-dots li:focus,
+   .slick-dots li.slick-active button:focus {
+      outline: none;
+  }
+  
+
+
+/*===================================
   Blog RSS
   ==================================*/
   .blog-rss-section{
@@ -292,6 +378,44 @@ Event Section
       border: 0;
   }
 
+
+/*======================================
+  Upcoming Event 
+====================================*/
+.upcoming-event-section{
+    padding:60px 0px;
+}
+.upcoming-event-section .card{
+border:1px solid transparent;
+}
+.content-streched{
+    display:flex;
+    justify-content: stretch;
+}
+.upcoming-event-section span.timing,
+ .upcoming-event-section span.location {
+    font-size: 14px;
+    font-style: italic;
+    color: #a0a0a0;
+}
+.upcoming-event-section .hotel-name{
+    color:#b59877;
+    font-style: italic;
+    font-size: 14px;
+}
+.upcoming-event-section .card-title{
+    margin-bottom: 22px;;
+}
+.upcoming-event-section .card-text{
+    margin-bottom: 10px;
+}
+.card-text img {
+    margin-right: 8px;
+}
+.upcoming-event-section .btn{
+    padding: 7px 16px;
+    margin-top:13px;
+}
 
 /*=========================================
   Footer Section 
@@ -350,3 +474,5 @@ padding-left: 0;
 
 
 
+  
+  
